@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="valid login credential(failed)">
+    <classes>
+      <class name="com.flamingo.testScripts.LoginClassToGoogle">
+        <methods>
+          <include name="testScenario1"/>
+        </methods>
+      </class> <!-- com.flamingo.testScripts.LoginClassToGoogle -->
+      <class name="com.flamingo.testScripts.LoginToswaglab">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.flamingo.testScripts.LoginToswaglab -->
+    </classes>
+  </test> <!-- valid login credential(failed) -->
+</suite> <!-- Failed suite [Suite] -->
