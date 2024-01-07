@@ -20,13 +20,11 @@ public final class PropertyFileClass {
 		try {
 			fis = new FileInputStream(FrameworkPathConstant.propertyFilepath);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
 			prop.load(fis);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return prop.getProperty(key);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flamingo.testScripts.LoginToswaglab2">
+      <class name="com.flamingo.testScripts.LinkHandling">
         <methods>
-          <include name="test"/>
+          <include name="linkHandletesting"/>
           <include name="driverClosing"/>
           <include name="driverInitialization"/>
         </methods>
-      </class> <!-- com.flamingo.testScripts.LoginToswaglab2 -->
+      </class> <!-- com.flamingo.testScripts.LinkHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
