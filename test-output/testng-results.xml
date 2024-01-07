@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-07T15:40:06 IST" name="Default suite" finished-at="2024-01-07T15:40:18 IST" duration-ms="11588">
+  <suite started-at="2024-01-07T23:15:19 IST" name="Default suite" finished-at="2024-01-07T23:15:26 IST" duration-ms="6917">
     <groups>
     </groups>
-    <test started-at="2024-01-07T15:40:06 IST" name="Default test" finished-at="2024-01-07T15:40:18 IST" duration-ms="11588">
-      <class name="com.flamingo.testScripts.LinkHandling">
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:com.flamingo.testScripts.LinkHandling@5677323c]" started-at="2024-01-07T15:40:06 IST" name="driverInitialization" finished-at="2024-01-07T15:40:09 IST" duration-ms="2518" status="PASS">
+    <test started-at="2024-01-07T23:15:19 IST" name="Default test" finished-at="2024-01-07T23:15:26 IST" duration-ms="6917">
+      <class name="com.flamingo.OrangeHRM.LoginPageTest">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:19 IST" name="driverInitialization" finished-at="2024-01-07T23:15:21 IST" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="linkHandletesting()[pri:0, instance:com.flamingo.testScripts.LinkHandling@5677323c]" started-at="2024-01-07T15:40:09 IST" name="linkHandletesting" finished-at="2024-01-07T15:40:18 IST" duration-ms="8816" status="PASS">
+        <test-method signature="loginWithCorrectCredential()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:21 IST" name="loginWithCorrectCredential" finished-at="2024-01-07T23:15:26 IST" duration-ms="5156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkHandletesting -->
-        <test-method is-config="true" signature="driverClosing()[pri:0, instance:com.flamingo.testScripts.LinkHandling@5677323c]" started-at="2024-01-07T15:40:18 IST" name="driverClosing" finished-at="2024-01-07T15:40:18 IST" duration-ms="219" status="PASS">
+        </test-method> <!-- loginWithCorrectCredential -->
+        <test-method is-config="true" signature="driverClosing()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:26 IST" name="driverClosing" finished-at="2024-01-07T23:15:26 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverClosing -->
-      </class> <!-- com.flamingo.testScripts.LinkHandling -->
+      </class> <!-- com.flamingo.OrangeHRM.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

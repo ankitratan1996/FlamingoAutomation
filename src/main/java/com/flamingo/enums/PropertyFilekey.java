@@ -2,7 +2,7 @@ package com.flamingo.enums;
 
 public enum PropertyFilekey {
 	BROWSER,
-	BROWSER_URL,
+	URL,
 	OVERRIDEREPORTS,
 	PASSEDSTEPSCREENSHOTS,
 	FAILEDSTEPSCREENSHOTS,
