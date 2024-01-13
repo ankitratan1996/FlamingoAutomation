@@ -137,9 +137,10 @@ public final class OrangeHRMHomepage {
 		
 	}
 	
-	public void clickUnderdownIcon()
+	public OrangeHRMHomepage clickUnderdownIcon()
 	{
 		underdownIcon.click();
+		return new OrangeHRMHomepage();
 	}
 	
 	public void clickAboutProfile()

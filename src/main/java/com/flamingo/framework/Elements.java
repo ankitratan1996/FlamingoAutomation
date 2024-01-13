@@ -21,11 +21,13 @@ public final class Elements {
 	private static final Logger log = LogManager.getLogger(Elements.class);
 
 	public static void TypeText(WebElement element, String data) {
+		log.info("entering the text: "+ data);
 		element.sendKeys(data);
 	}
 
 	public static void TypeTextIfElementPresent(WebElement element, String data) {
 		if (element.isDisplayed()) {
+			log.info("entering the text: "+ data);
 			element.sendKeys(data);
 		}
 	}
@@ -38,6 +40,7 @@ public final class Elements {
 		Random random = new Random();
 		int rn = random.nextInt(100);
 		String randomNumber = Integer.toString(rn);
+		log.info("enter random number: "+randomNumber);
 		element.sendKeys(randomNumber);
 	}
 
@@ -104,16 +107,19 @@ public final class Elements {
 
 	public static void selectByText(WebElement element, String text) {
 		Select select = new Select(element);
+		log.info("selecting the text: "+text);
 		select.selectByVisibleText(text);
 	}
 
 	public static void selectByIndex(WebElement element, int index) {
 		Select select = new Select(element);
+		log.info("selecting the index: "+index);
 		select.selectByIndex(index);
 	}
 
 	public static void selectByValue(WebElement element, String value) {
 		Select select = new Select(element);
+		log.info("selecting the index: "+value);
 		select.selectByValue(value);
 	}
 
@@ -134,16 +140,19 @@ public final class Elements {
 
 	public static void deSelectByText(WebElement element, String text) {
 		Select select = new Select(element);
+		log.info("deselecting the text: "+text);
 		select.deselectByVisibleText(text);
 	}
 
 	public static void deSelectByIndex(WebElement element, int index) {
 		Select select = new Select(element);
+		log.info("deselecting the index: "+index);
 		select.deselectByIndex(index);
 	}
 
 	public static void deSelectByValue(WebElement element, String value) {
 		Select select = new Select(element);
+		log.info("deselecting the value: "+value);
 		select.deselectByValue(value);
 	}
 

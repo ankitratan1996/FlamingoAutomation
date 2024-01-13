@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="2" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-07T23:15:19 IST" name="Default suite" finished-at="2024-01-07T23:15:26 IST" duration-ms="6917">
+  <suite started-at="2024-01-12T01:31:35 IST" name="Suite" finished-at="2024-01-12T01:31:38 IST" duration-ms="3176">
     <groups>
+      <group name="functionality test">
+        <method signature="HomePageTest.aboutProfileTesting()[pri:0, instance:com.flamingo.OrangeHRM.HomePageTest@674c583e]" name="aboutProfileTesting" class="com.flamingo.OrangeHRM.HomePageTest"/>
+      </group> <!-- functionality test -->
     </groups>
-    <test started-at="2024-01-07T23:15:19 IST" name="Default test" finished-at="2024-01-07T23:15:26 IST" duration-ms="6917">
+    <test started-at="2024-01-12T01:31:35 IST" name="valid login credential" finished-at="2024-01-12T01:31:38 IST" duration-ms="3176">
       <class name="com.flamingo.OrangeHRM.LoginPageTest">
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:19 IST" name="driverInitialization" finished-at="2024-01-07T23:15:21 IST" duration-ms="1624" status="PASS">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@4686afc2]" started-at="2024-01-12T01:31:35 IST" name="driverInitialization" finished-at="2024-01-12T01:31:37 IST" duration-ms="2146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method signature="loginWithCorrectCredential()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:21 IST" name="loginWithCorrectCredential" finished-at="2024-01-07T23:15:26 IST" duration-ms="5156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithCorrectCredential -->
-        <test-method is-config="true" signature="driverClosing()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@5677323c]" started-at="2024-01-07T23:15:26 IST" name="driverClosing" finished-at="2024-01-07T23:15:26 IST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="driverClosing()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@4686afc2]" started-at="2024-01-12T01:31:38 IST" name="driverClosing" finished-at="2024-01-12T01:31:38 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverClosing -->
       </class> <!-- com.flamingo.OrangeHRM.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- valid login credential -->
+  </suite> <!-- Suite -->
 </testng-results>

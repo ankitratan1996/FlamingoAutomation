@@ -7,6 +7,9 @@ public final class FrameworkPathConstant {
 	
 	private FrameworkPathConstant() {}
 	
+	public static final String testRunnerSheetPath=System.getProperty("user.dir")+
+			"/src/test/resources/TestSheet.xlsx";
+	
 	public static final String propertyFilepath =System.getProperty("user.dir")+
 			"/src/main/resources/configuration.properties";
 	
@@ -29,9 +32,6 @@ public final class FrameworkPathConstant {
 		}
 
 		return extentReportPath + "/" + "index.html";
-	}
-	
-	
-	
+	}	
 
 }
