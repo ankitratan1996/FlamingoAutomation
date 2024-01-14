@@ -17,9 +17,4 @@ public class OpenCartHomepage {
 	By searchbar=By.xpath("//*[@id=\"search\"]/input");
 	By kartDisplay=By.xpath("//*[@id=\"header-cart\"]/div/button");
 	
-	
-	
-	
-	
-	
 }

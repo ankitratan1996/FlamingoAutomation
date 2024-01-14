@@ -7,16 +7,23 @@ public final class FrameworkPathConstant {
 	
 	private FrameworkPathConstant() {}
 	
-	public static final String testRunnerSheetPath=System.getProperty("user.dir")+
-			"/src/test/resources/TestSheet.xlsx";
+	private static final String dir=System.getProperty("user.dir");
 	
-	public static final String propertyFilepath =System.getProperty("user.dir")+
-			"/src/main/resources/configuration.properties";
+	private static final String testRunnerSheetPath=dir + "/src/test/resources/TestSheet.xlsx";
 	
-	private static final String extentReportPath = System.getProperty("user.dir") 
-			+ "/extent-report";
-
+	private static final String propertyFilepath =dir + "/src/main/resources/configuration.properties";
+	
+	private static final String extentReportPath = dir +"/extent-report";
+	
 	private static String extentReportFilePath = "";
+
+	public static String getTestrunnersheetpath() {
+		return testRunnerSheetPath;
+	}
+
+	public static String getPropertyfilepath() {
+		return propertyFilepath;
+	}
 	
 	public static String getExtentReportFilePath() throws Exception {
 		if (extentReportFilePath.isEmpty()) {
@@ -27,10 +34,9 @@ public final class FrameworkPathConstant {
 
 	private static String createReportPath() throws Exception {
 		if (PropertyFileClass.getPropertiesValue(PropertyFilekey.OVERRIDEREPORTS.toString())
-				.equalsIgnoreCase("yes")) {
+				.equalsIgnoreCase("no")) {
 			return extentReportPath + "/" + System.currentTimeMillis() + "index.html";
 		}
-
 		return extentReportPath + "/" + "index.html";
 	}	
 

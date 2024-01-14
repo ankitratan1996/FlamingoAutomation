@@ -27,7 +27,7 @@ public final class DriverClass {
 	public static void initDriver() {
 
 		String browserName = PropertyFileClass.getPropertiesValue(PropertyFilekey.BROWSER.toString().toLowerCase());
-		log.info("Selected Browser is: " + browserName);
+		log.info("selected browser is: "+browserName);
 		if (Objects.isNull(driver)) {
 			if (browserName.equalsIgnoreCase("chrome")) {
 				ChromeOptions chrome = new ChromeOptions();

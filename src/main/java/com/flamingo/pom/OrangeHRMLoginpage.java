@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.flamingo.reports.ExtentLogger;
 
 public final class OrangeHRMLoginpage {
 
@@ -28,16 +29,19 @@ public final class OrangeHRMLoginpage {
 
 	public OrangeHRMLoginpage enterUsername(String username) {
 		usernameInput.sendKeys(username);
+		ExtentLogger.pass("username has entered"+ username);
 		return this;
 	}
 
 	public OrangeHRMLoginpage enterPassword(String password) {
 		passwordInput.sendKeys(password);
+		ExtentLogger.pass("password has entered"+ password);
 		return this;
 	}
 
 	public OrangeHRMHomepage clickLogin() {
 		loginButton.click();
+		ExtentLogger.pass("submit has clicked");
 		return new OrangeHRMHomepage();
 	}
 

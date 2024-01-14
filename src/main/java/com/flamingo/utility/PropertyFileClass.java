@@ -18,7 +18,7 @@ public final class PropertyFileClass {
 		prop=new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream(FrameworkPathConstant.propertyFilepath);
+			fis = new FileInputStream(FrameworkPathConstant.getPropertyfilepath());
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

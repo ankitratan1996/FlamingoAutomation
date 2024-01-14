@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.flamingo.OrangeHRM.LoginPageTest" class="method navigator-link" hash-for-method="loginWithCorrectCredential">loginWithCorrectCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -105,6 +119,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.flamingo.OrangeHRM.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithCorrectCredential">
+                  </a> <!-- loginWithCorrectCredential -->
+                  <span class="method-name">loginWithCorrectCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -114,15 +143,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.flamingo.listner.ListenerClass&quot;/&gt;
-    &lt;listener class-name=&quot;com.flamingo.listner.MethodInterceptor&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;valid login credential&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;valid login credential&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.flamingo.OrangeHRM.LoginPageTest&quot;/&gt;
-      &lt;class name=&quot;com.flamingo.OrangeHRM.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- valid login credential --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -136,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">valid login credential (2 classes)</span>
+                <span class="test-name">valid login credential (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,12 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithCorrectCredential')
+data.setCell(0, 2, 'com.flamingo.OrangeHRM.LoginPageTest')
+data.setCell(0, 3, 7553);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -182,15 +213,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.flamingo.OrangeHRM.HomePageTest</span>
+              <span class="ignored-class-name">com.flamingo.OrangeHRM.LoginPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">driverClosing</span>
-                <br/>
-                <span class="ignored-method-name">driverInitialization</span>
+                <span class="ignored-method-name">loginWithInCorrectCredential</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -207,9 +236,13 @@ return data;
                 <span class="method-name">driverInitialization</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginWithCorrectCredential</span>
+                <span class="method-start">1674 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">driverClosing</span>
-                <span class="method-start">3048 ms</span>
+                <span class="method-start">9338 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

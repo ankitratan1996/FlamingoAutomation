@@ -179,8 +179,7 @@ public final class Elements {
 	}
 
 	public static String getAlertText() {
-		String text = getAlert().getText();
-		return text;
+		return getAlert().getText();
 	}
 
 	public static boolean isAlertPresent() {

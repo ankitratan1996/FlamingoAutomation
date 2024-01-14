@@ -34,6 +34,8 @@ public class ListenerClass implements ITestListener, ISuiteListener {
 			ExtendReportManager.endReportSetting();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

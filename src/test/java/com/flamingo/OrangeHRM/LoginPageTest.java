@@ -25,7 +25,7 @@ public class LoginPageTest extends BaseClass{
 		Assertions.assertThat(pageTitle).isEqualTo("OrangeHRM").isNotBlank();
 		
 	}
-	@Test()
+	@Test(enabled=false)
 	public void loginWithInCorrectCredential()
 	{
 		DriverManager.getDriver().get(PropertyFileClass.

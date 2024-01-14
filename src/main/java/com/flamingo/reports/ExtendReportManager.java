@@ -1,8 +1,7 @@
-package com.flamingo.reports;
+ package com.flamingo.reports;
 
 import java.awt.Desktop;
 import java.io.File;
-import java.io.IOException;
 import java.util.Objects;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -48,13 +47,13 @@ public final class ExtendReportManager {
 	public static final String getScreenByte64() {
 		TakesScreenshot scrShot = ((TakesScreenshot) DriverManager.getDriver());
 		return scrShot.getScreenshotAs(OutputType.BASE64);
-	}
+	} 
 
-	public static void endReportSetting() throws IOException {
+	public static void endReportSetting() throws Exception {
 		if (Objects.nonNull(extent)) {
 			extent.flush();
 		}
-		Desktop.getDesktop().browse(new File("index.html").toURI());
+		Desktop.getDesktop().browse(new File(FrameworkPathConstant.getExtentReportFilePath()).toURI());
 	}
 
 }
