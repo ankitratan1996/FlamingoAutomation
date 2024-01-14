@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-13T19:29:00 IST" name="Suite" finished-at="2024-01-13T19:29:09 IST" duration-ms="9450">
+  <suite started-at="2024-01-14T10:11:29 IST" name="Default suite" finished-at="2024-01-14T10:11:29 IST" duration-ms="10">
     <groups>
     </groups>
-    <test started-at="2024-01-13T19:29:00 IST" name="valid login credential" finished-at="2024-01-13T19:29:09 IST" duration-ms="9450">
-      <class name="com.flamingo.OrangeHRM.LoginPageTest">
-        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@65c7a252]" started-at="2024-01-13T19:29:00 IST" name="driverInitialization" finished-at="2024-01-13T19:29:01 IST" duration-ms="1660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverInitialization -->
-        <test-method signature="loginWithCorrectCredential()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@65c7a252]" started-at="2024-01-13T19:29:01 IST" name="loginWithCorrectCredential" finished-at="2024-01-13T19:29:09 IST" duration-ms="7553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithCorrectCredential -->
-        <test-method is-config="true" signature="driverClosing()[pri:0, instance:com.flamingo.OrangeHRM.LoginPageTest@65c7a252]" started-at="2024-01-13T19:29:09 IST" name="driverClosing" finished-at="2024-01-13T19:29:09 IST" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverClosing -->
-      </class> <!-- com.flamingo.OrangeHRM.LoginPageTest -->
-    </test> <!-- valid login credential -->
-  </suite> <!-- Suite -->
+    <test started-at="2024-01-14T10:11:29 IST" name="Default test" finished-at="2024-01-14T10:11:29 IST" duration-ms="10">
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

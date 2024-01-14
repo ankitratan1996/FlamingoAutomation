@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="valid login credential(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.flamingo.listner.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.flamingo.OrangeHRM.LoginPageTest">
         <methods>
           <include name="driverClosing"/>
-          <include name="reportInitialization"/>
-          <include name="reportClosing"/>
           <include name="loginWithCorrectCredential"/>
           <include name="driverInitialization"/>
         </methods>
       </class> <!-- com.flamingo.OrangeHRM.LoginPageTest -->
     </classes>
-  </test> <!-- valid login credential(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

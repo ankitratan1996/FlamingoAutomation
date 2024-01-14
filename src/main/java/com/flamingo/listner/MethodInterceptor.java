@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
@@ -15,8 +14,8 @@ import com.flamingo.utility.XlUtilities;
 
 public class MethodInterceptor implements IMethodInterceptor {
 
-	// list will contain all the testcases which gone execute
 
+	// list will contain all the test-cases which gone execute
 	@Override
 	public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
 
@@ -26,13 +25,14 @@ public class MethodInterceptor implements IMethodInterceptor {
 		Map<String, String> map = null;
 		List<Map<String, String>> list = new ArrayList<>();
 		try {
-			int rowCount = xlUtilities.getRowCount("RUNMANAGER");
-			int colCount = xlUtilities.getCellCount("RUNMANAGER", 0);
-			for (int row = 1; row <= rowCount; row++) {
+			int rowCount = xlUtilities.getRowCount("RunManager");
+			int colCount = xlUtilities.getCellCount("RunManager", 0);
+			
+			for (int row = 1; row < rowCount; row++) {
+				map = new HashMap<>();
 				for (int col = 0; col < colCount; col++) {
-					map = new HashMap<>();
-					String key = xlUtilities.getCellData("RUNMANAGER", 0, col);
-					String value = xlUtilities.getCellData("RUNMANAGER", row, col);
+					String key = xlUtilities.getCellData("RunManager", 0, col);
+					String value = xlUtilities.getCellData("RunManager", row, col);
 					map.put(key, value);
 				}
 				list.add(map);
@@ -45,11 +45,9 @@ public class MethodInterceptor implements IMethodInterceptor {
 			for (int col = 0; col < list.size(); col++) {
 				if (methods.get(row).getMethod().getMethodName().equalsIgnoreCase(list.get(col).get("testName"))) {
 					if(list.get(col).get("execute").equalsIgnoreCase("yes")) {
-						methods.get(row).getMethod().setDescription(list.get(row).get("testDescription"));
 						methods.get(row).getMethod().setInvocationCount(Integer.parseInt(list.get(row).get("count")));
 						methods.get(row).getMethod()
 								.setInvocationCount(Integer.parseInt(list.get(row).get("priority")));
-						methods.get(row).getMethod().getGroups();
 						result.add(methods.get(row));
 					}
 				}
