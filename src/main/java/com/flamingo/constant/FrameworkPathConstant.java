@@ -1,5 +1,8 @@
 package com.flamingo.constant;
-
+/**
+ * This FrameworkPathConstant provides path form configuration
+ * @author ankit
+ */
 import com.flamingo.enums.PropertyFilekey;
 import com.flamingo.utility.PropertyFileClass;
 

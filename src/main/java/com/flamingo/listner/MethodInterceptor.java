@@ -41,13 +41,16 @@ public class MethodInterceptor implements IMethodInterceptor {
 			e.printStackTrace();
 		}
 
-		for (int row = 1; row < methods.size(); row++) {
-			for (int col = 0; col < list.size(); col++) {
-				if (methods.get(row).getMethod().getMethodName().equalsIgnoreCase(list.get(col).get("testName"))) {
-					if(list.get(col).get("execute").equalsIgnoreCase("yes")) {
-						methods.get(row).getMethod().setInvocationCount(Integer.parseInt(list.get(row).get("count")));
-						methods.get(row).getMethod()
-								.setInvocationCount(Integer.parseInt(list.get(row).get("priority")));
+		for (int row = 0; row < methods.size(); row++) 
+		{
+			for (int col = 0; col < list.size(); col++)
+			{
+				if (methods.get(row).getMethod().getMethodName().equalsIgnoreCase(list.get(col).get("testName")))
+				{
+					if(list.get(col).get("execute").equalsIgnoreCase("yes")) 
+					{
+						methods.get(row).getMethod().setInvocationCount(Integer.parseInt(list.get(col).get("count")));
+						methods.get(row).getMethod().setInvocationCount(Integer.parseInt(list.get(col).get("priority")));
 						result.add(methods.get(row));
 					}
 				}

@@ -14,7 +14,16 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import com.flamingo.enums.PropertyFilekey;
 import com.flamingo.utility.PropertyFileClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * 
+ * DriverClass is responsible for invoking and closing the browser
+ * <p>
+ * January-14-2024
+ * @author ankit kumar
+ * @version 1.0
+ * @Since 1.0
+ * 
+ */
 public final class DriverClass {
 
 	private static final Logger log = LogManager.getLogger();

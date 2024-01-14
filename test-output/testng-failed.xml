@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.flamingo.listner.ListenerClass"/>
+    <listener class-name="com.flamingo.listner.MethodInterceptor"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
